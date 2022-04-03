@@ -1,7 +1,45 @@
 {% extends "base_tmplt.html" %}
 
+{% load static %}
+
+{% block extrahead %}
+
+  <link rel="stylesheet" href="{% static '/css/basestyle.css' %}">
+
+{% endblock %}
+
 {% block body %}
 
-<h1>IMG classfier</h1>
+<div class="container">
 
+     
+
+    <div class="input-group mb-3">
+        <input type="file" class="form-control" id="inputGroupFile">
+        <label class="input-group-text" for="inputGroupFile">Upload</label>
+    </div>  
+    <hr>
+    <hr>
+    <div class="d-grid gap-2">
+        <button class="btn btn-lg btn-secondary" type="button">Identificar</button>
+      </div> 
+    <hr>
+    <hr>
+    <div class="row g-0 border rounded overflow-hidden flex-md-row  shadow-sm  position-relative">
+        <div class="col-auto d-none d-lg-block">
+            <img class="" src="https://www.agromatica.es/wp-content/uploads/2014/01/Setas-Boletus-edulis.jpg" alt="Card image cap" width="700" height="450">
+        </div>
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block">IDENTIFICADA</strong>
+          <h3 class="mb-0">Boletus edulis</h3>
+          <div class="mb-1 text-muted">COMESTIBLE</div>
+          <p class="card-text mb-auto">Boletus edulis es el nombre en latín de una seta comestible, también conocida en España como1​2​ hongo blanco,3​ hongo pambazo,4​ seta calabaza, seta de calabaza o simplemente calabaza.5​ Puede encontrarse muy frecuentemente en bosques de hoja caducifolia. Es una seta que puede alcanzar dimensiones notables; por lo general el sombrero puede medir de 7 a 20 cm de diámetro y el pie adquirir la misma altura. Suele confundirse con Tylopilus felleus o con Boletus badius.
+
+            Altamente apreciado, Boletus edulis es comercializado fresco en otoño, en el centro y sur de Europa, pero también se comercializa seco por todo el mundo. </p>
+        </div>
+    </div>
+
+</div>
+
+  
 {% endblock %}

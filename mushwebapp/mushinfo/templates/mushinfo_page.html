@@ -1,7 +1,77 @@
 {% extends "base_tmplt.html" %}
 
+{% load static %}
+
+{% block extrahead %}
+
+  <link rel="stylesheet" href="{% static '/css/basestyle.css' %}">
+
+{% endblock %}
+
 {% block body %}
 
-<h1>Mush INFO</h1>
+<div class="container">
 
+    <h1>Información general y datos</h1>
+
+    <div class="row g-0 border rounded overflow-hidden flex-md-row  shadow-sm  position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block">Setas en España</strong>
+          <div class="mb-1 text-muted">Las mejores zonas para la recolección</div>
+          <p class="card-text mb-auto">La red de sociedades micológicas nacionales cumplen una gran labor divulgativa con la intención de evitar 
+              ingestas accidentales por confusión entre especies. Henar Roldán, bióloga investigadora del CSIC, recuerda que "todas las setas son 
+              comestibles, pero algunas una sola vez". Si existe duda al identificar un ejemplar, es mejor descartarlo. Roldán señala también que es 
+              necesario un cambio de mentalidad: "Hay que salir al campo para encontrar e identificar setas, sin cogerlas". Una recomendación que en 
+              caso de espacios protegidos es una obligación legal: está prohibido dañar la flora y la fauna. </p>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+          <img class="" src="https://e00-expansion.uecdn.es/assets/multimedia/imagenes/2017/11/14/15106532948180.jpg" alt="Card image cap" width="700" height="400">
+        </div>
+    </div>
+    <hr>
+    <hr>
+    <div class="row g-0 border rounded overflow-hidden flex-md-row  shadow-sm  position-relative">
+        <div class="col-auto d-none d-lg-block">
+            <img class="" src="https://www.tribunasalamanca.com/images/images/setas%281%29.jpg" alt="Card image cap" width="700" height="450">
+        </div>
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block">World</strong>
+          <h3 class="mb-0">Featured post</h3>
+          <div class="mb-1 text-muted">Nov 12</div>
+          <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+        </div>
+    </div>
+    <hr>
+    <hr>
+    <div class="row g-0 border rounded overflow-hidden flex-md-row  shadow-sm  position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block">World</strong>
+          <h3 class="mb-0">Featured post</h3>
+          <div class="mb-1 text-muted">Nov 12</div>
+          <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+          <img class="" src="https://www.tribunasalamanca.com/images/images/setas%281%29.jpg" alt="Card image cap" width="700" height="450">
+        </div>
+    </div>
+    <hr>
+    <hr>
+    <div class="row g-0 border rounded overflow-hidden flex-md-row  shadow-sm  position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block">World</strong>
+          <h3 class="mb-0">Featured post</h3>
+          <div class="mb-1 text-muted">Nov 12</div>
+          <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+          <img class="" src="https://www.tribunasalamanca.com/images/images/setas%281%29.jpg" alt="Card image cap" width="350" height="300">
+        </div>
+        <div class="col-auto d-none d-lg-block">
+            <img class="" src="https://www.tribunasalamanca.com/images/images/setas%281%29.jpg" alt="Card image cap" width="350" height="300">
+        </div>
+    </div>
+
+</div>
+
+  
 {% endblock %}
